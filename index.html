@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Velqen Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>Velqen</h2>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li>Users</li>
+            <li>Orders</li>
+            <li>Analytics</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <h1>Admin Dashboard</h1>
+            <div class="profile">Admin</div>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>1,245</p>
+            </div>
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>320</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>$12,430</p>
+            </div>
+            <div class="card">
+                <h3>Growth</h3>
+                <p>+18%</p>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <canvas id="salesChart"></canvas>
+        </section>
+
+        <section class="table-section">
+            <h2>Recent Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="userTable">
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<main class="main">
+
+    <header class="topbar">
+        <h1 id="pageTitle">Dashboard</h1>
+        <div class="profile">Admin</div>
+    </header>
+
+    <!-- DASHBOARD -->
+    <section id="dashboardPage" class="page active">
+        <section class="cards">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>1,245</p>
+            </div>
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>320</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>$12,430</p>
+            </div>
+            <div class="card">
+                <h3>Growth</h3>
+                <p>+18%</p>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <canvas id="salesChart"></canvas>
+        </section>
+    </section>
+
+    <!-- USERS -->
+    <section id="usersPage" class="page">
+        <h2>Users</h2>
+        <p>Manage your platform users here.</p>
+    </section>
+
+    <!-- ORDERS -->
+    <section id="ordersPage" class="page">
+        <h2>Orders</h2>
+        <p>Here you can view and manage customer orders.</p>
+    </section>
+
+    <!-- SETTINGS -->
+    <section id="settingsPage" class="page">
+        <h2>Settings</h2>
+        <p>System configuration and preferences.</p>
+    </section>
+
+</main>
